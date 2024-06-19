@@ -17,7 +17,7 @@ spec:
           - git:
               directories:
                 - path: monitoring-appset/*
-              repoURL: https://github.com/mocdaniel/gitops-examples
+              repoURL: https://github.com/bladeoner/gitops-examples
               revision: HEAD
   goTemplate: true
   template:
@@ -26,7 +26,7 @@ spec:
     spec:
       project: team-monitoring
       source:
-        repoURL: https://github.com/mocdaniel/gitops-examples
+        repoURL: https://github.com/bladeoner/gitops-examples
         targetRevision: HEAD
         path: "{{ .path.path }}"
         helm:
